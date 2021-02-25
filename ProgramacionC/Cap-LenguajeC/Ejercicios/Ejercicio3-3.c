@@ -1,0 +1,1 @@
+//Escribir y ejecutar un programa que imprima una pagina de texto con no mas de 40 caracteres por linea
