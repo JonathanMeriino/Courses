@@ -2,17 +2,17 @@
 
 int main() {
 
-    int a[5] = {10,46,47,24,53};
-    int i,pos,aux;
+    int A[5] = {10,46,47,24,53};
+    int j,posicion,aux;
 
-    for ( i = 0; i <5; i++){
-        pos = i;
-        aux = a[i];
-        while ((pos>0)&&(aux < a[pos-1])){
-            a[pos] = a[pos-1];
-            pos--;
+    for ( j = 0; j <strlen(A); j++){
+        posicion = j;
+        aux = A[j];
+        while ((posicion>0)&&(aux < A[posicion-1])){
+            A[posicion] = A[posicion-1];
+            posicion--;
         }
-        a[pos] = aux;
+        A[posicion] = aux;
     }
     printf("Ascendente\n");
     for ( i = 0; i <5; i++){
