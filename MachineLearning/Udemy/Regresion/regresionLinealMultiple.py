@@ -21,7 +21,7 @@ Construir el modelo
 
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+
 from sklearn.impute import SimpleImputer  # calculo de los datos
 from sklearn import preprocessing
 
@@ -55,6 +55,9 @@ regression.fit(x_train,y_train)
 #Preddiccion de los resultados en el conjunto de testing
 y_pred = regression.predict(x_test)
 
+
+#Construir el modelo optimo de RLM utilizando la eliminacion hacia atras
+import statmodels.formulas.api as sm
 
 
 
