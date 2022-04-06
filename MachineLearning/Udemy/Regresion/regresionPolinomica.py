@@ -43,3 +43,5 @@ plt.ylabel("Sueldo en $")
 plt.show()
 
 #prediccion de los modelos
+lin_reg.predict([[6.5]])
+lin_reg2.predict(poly_reg.fit_transform([[6.5]]))
